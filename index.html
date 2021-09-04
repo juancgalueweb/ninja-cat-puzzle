@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninja-cat puzzle</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center m-1 p-1 text-primary">Ninja-cat puzzle</h1>
+    <p class="text-center m-1 p-1 lead">
+      Every time you click on an image, it will return a random image from the
+      puzzle, keep clicking until you find what you think is the right one.
+    </p>
+    <p class="text-center m-1 p-1 fw-bold">
+      If the puzzle is correct, an alert will pop-up, good luck!
+    </p>
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-3 m-2 p-2 bg-light border border-1 rounded">
+          <!-- There are 10 pictures -->
+          <img src="img/cat0.png" alt="Cat-0" id="img-0" data-alt-src="0" />
+          <img src="img/cat1.png" alt="Cat-1" id="img-1" data-alt-src="1" />
+          <img src="img/cat2.png" alt="Cat-2" id="img-2" data-alt-src="2" />
+          <img src="img/cat3.png" alt="Cat-3" id="img-3" data-alt-src="3" />
+          <img src="img/cat4.png" alt="Cat-4" id="img-4" data-alt-src="4" />
+          <img src="img/ninja0.png" alt="Ninja-0" id="img-5" data-alt-src="5" />
+          <img src="img/ninja1.png" alt="Ninja-1" id="img-6" data-alt-src="6" />
+          <img src="img/ninja2.png" alt="Ninja-2" id="img-7" data-alt-src="7" />
+          <img src="img/ninja3.png" alt="Ninja-3" id="img-8" data-alt-src="8" />
+          <img src="img/ninja4.png" alt="Ninja-4" id="img-9" data-alt-src="9" />
+        </div>
+      </div>
+      <div class="row text-center justify-content-center">
+        <div class="col-3">
+          <button id="hint" type="button" class="btn btn-danger my-2">
+            Need a hint?
+          </button>
+          <div
+            id="win"
+            class="alert alert-primary alert-dismissible fade show"
+            role="alert"
+          >
+            <strong>Holy guacamole!</strong> You solved the puzzle, thanks for
+            playing!
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- My JS/JQuery -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

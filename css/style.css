@@ -1,0 +1,20 @@
+body {
+  background-image: radial-gradient(
+    circle 588px at 31.7% 40.2%,
+    rgba(225, 200, 239, 1) 21.4%,
+    rgba(163, 225, 233, 1) 57.1%
+  );
+  height: 100vh;
+}
+
+img {
+  margin: 1px 0;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+#win {
+  display: none;
+}
